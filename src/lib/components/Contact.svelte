@@ -134,7 +134,7 @@
         <div class="bg-gray-800/30 backdrop-blur-sm border border-gray-700/50 rounded-xl p-8 h-full">
           <h3 class="text-xl font-bold text-white mb-6">Connect With Me</h3>
           
-          <div class="space-y-6">
+          <div class="space-y-6 ">
             <div class="flex items-start">
               <div class="p-3 rounded-full bg-gray-700/50 text-blue-400 mr-4">
                 <FontAwesomeIcon icon={faWhatsapp} />
