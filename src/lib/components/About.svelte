@@ -12,50 +12,54 @@
   let isMobile = false;
   
   const timeline = [
-      {
-          year: '2018',
-          title: 'Data Analyst',
-          description: 'Kicked off my journey diving deep into data — building dashboards, uncovering insights, and falling in love with storytelling through visualization.',
-          longDescription: 'As a Data Analyst, I worked extensively with SQL, Tableau, and Python to transform raw data into actionable insights. I developed automated reporting systems that reduced manual work by 70% and created interactive dashboards that helped stakeholders make data-driven decisions. This role taught me the importance of clean data visualization and clear communication of complex information.',
-          icon: faDatabase,
-          color: 'text-blue-400',
-          bgColor: 'bg-blue-400/10',
-          borderColor: 'border-blue-400/30',
-          skills: ['SQL', 'Tableau', 'Python', 'Data Visualization', 'ETL']
-      },
-      {
-          year: '2019',
-          title: 'Python Developer',
-          description: 'Moved into backend engineering — designing APIs, crunching data pipelines, and automating workflows with Python.',
-          longDescription: 'Transitioning to Python development, I built RESTful APIs with Flask and FastAPI, designed efficient data processing pipelines, and automated business processes. I led the migration of legacy systems to microservices architecture, improving scalability and reducing downtime. This experience deepened my understanding of software architecture and the full development lifecycle.',
-          icon: faCode,
-          color: 'text-yellow-400',
-          bgColor: 'bg-yellow-400/10',
-          borderColor: 'border-yellow-400/30',
-          skills: ['Python', 'Flask', 'FastAPI', 'Docker', 'AWS']
-      },
-      {
-          year: '2020',
-          title: 'Full-Stack Shift',
-          description: 'Bridged the gap between backend logic and frontend design — creating smooth, responsive interfaces with a focus on user experience.',
-          longDescription: 'Expanding into full-stack development, I worked with React, Vue, and eventually Svelte to build responsive, user-friendly interfaces. I focused on creating seamless experiences between frontend and backend systems, implementing real-time data updates, and optimizing performance. This period was crucial in developing my design sensibilities and understanding of user psychology.',
-          icon: faPalette,
-          color: 'text-purple-400',
-          bgColor: 'bg-purple-400/10',
-          borderColor: 'border-purple-400/30',
-          skills: ['JavaScript', 'React', 'Vue', 'Svelte', 'UI/UX']
-      },
-      {
-          year: 'Present',
-          title: 'Web Game Developer',
-          description: 'Crafting immersive web-based games and tools with modern frameworks like SvelteKit — blending data, design, and interactivity.',
-          longDescription: 'Currently, I combine all my previous experience to create engaging web-based games and interactive experiences. Using SvelteKit, Three.js, and WebGL, I build performant, visually rich applications that tell stories through interaction. My data background informs game mechanics and analytics, while my design focus ensures delightful user experiences. I also contribute to open-source projects and share knowledge through technical writing.',
-          icon: faChartLine,
-          color: 'text-blue-400',
-          bgColor: 'bg-blue-400/10',
-          borderColor: 'border-blue-400/30',
-          skills: ['SvelteKit', 'Three.js', 'Game Design', 'WebGL', 'Animation']
-      }
+            {
+        year: '2018–2020',
+        title: 'Data Analyst',
+        description: 'Dove into the world of data—analyzing trends, building dashboards, and discovering the power of clear, visual storytelling.',
+        longDescription: 'During this period, I explored data analytics through internships and hands-on projects. I used tools like SQL, Tableau, and Python to clean data, uncover insights, and present findings through clear, interactive dashboards. I also built automated reports that saved time and helped guide decision-making. This was where I first saw how powerful well-communicated data could be.',
+        icon: faDatabase,
+        color: 'text-blue-400',
+        bgColor: 'bg-blue-400/10',
+        borderColor: 'border-blue-400/30',
+        skills: ['SQL', 'Tableau', 'Python', 'Data Visualization', 'ETL']
+        }
+,
+{
+  year: '2021',
+  title: 'Python Developer',
+  description: 'Expanded into backend development — building APIs, processing data, and automating workflows to support analytics.',
+  longDescription: 'To strengthen my data analytics work, I deepened my skills in Python development through hands-on projects. I built RESTful APIs using Flask and FastAPI, developed custom data pipelines, and automated reporting tasks. One highlight was contributing to a master’s research paper at UCC, where I supported data processing and backend workflows. These experiences gave me a strong foundation in backend engineering and practical software architecture.',
+  icon: faCode,
+  color: 'text-yellow-400',
+  bgColor: 'bg-yellow-400/10',
+  borderColor: 'border-yellow-400/30',
+  skills: ['Python', 'Flask', 'FastAPI', 'Data Pipelines', 'APIs']
+},
+      
+{
+  year: '2021–2023',
+  title: 'Full-Stack Shift',
+  description: 'Bridged backend logic and frontend design — building responsive, intuitive interfaces with a focus on user experience.',
+  longDescription: 'During this phase, I explored full-stack development more deeply — starting with React, experimenting with Vue, and eventually gravitating toward SvelteKit for its simplicity and performance. I built dynamic UIs, handled real-time data updates, and refined the user experience across projects. This shift helped me blend logic with design and sharpened my eye for detail and usability.',
+  icon: faPalette,
+  color: 'text-purple-400',
+  bgColor: 'bg-purple-400/10',
+  borderColor: 'border-purple-400/30',
+  skills: ['JavaScript', 'React', 'Svelte/SvelteKit', 'UI/UX']
+}
+,
+{
+  year: '2023–Present',
+  title: 'Web Game Developer',
+  description: 'Building immersive text-based RPGs — blending data, design, and interactivity using modern tools like SvelteKit.',
+  longDescription: "I've been channeling my full-stack skills into building full-featured browser-based RPGs inspired by games like Torn. I started with a project called Modern Warfare, then shifted focus to a new game — CyberOps — a cyberpunk-themed RPG set to launch by the end of 2025. I'm using SvelteKit for the core framework and drawing on my background in data, design, and UX to create deep mechanics, interactive systems, and rich player experiences. This project is a blend of everything I've learned so far, and I'm excited to see where it goes.",
+  icon: faChartLine,
+  color: 'text-blue-400',
+  bgColor: 'bg-blue-400/10',
+  borderColor: 'border-blue-400/30',
+  skills: ['SvelteKit', 'Game Design', 'System Architecture', 'UI/UX', 'Data-Driven Mechanics']
+}
+
   ];
   
   const setActive = (index: number) => {
@@ -98,6 +102,12 @@
           window.removeEventListener('scroll', handleScroll);
       };
   });
+  const impacts = [
+    'Reduced reporting time by 70% through automation',
+    'Improved API response times by 40% through optimization',
+    'Increased user engagement by 25% with UI improvements',
+    'Created interactive experiences with 90%+ satisfaction ratings'
+  ];
 </script>
 
 <section id="about" class="relative py-16 lg:py-28 bg-gray-900 text-white overflow-hidden">
@@ -129,11 +139,11 @@
       <div class="text-center mb-12 lg:mb-20" in:fly={{ y: 50, duration: 600 }}>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
               <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-purple-400 to-blue-500 animate-gradient-x">
-                  Professional Evolution
+                  My Journey
               </span>
           </h2>
           <p class="max-w-2xl mx-auto text-gray-400 text-base lg:text-lg">
-              A visual narrative of my growth from data to design to interactive experiences
+            A look at how I went from analyzing data to designing and building modern websites.
           </p>
       </div>
       
@@ -234,13 +244,10 @@
                                       </div>
                                       
                                       <div class="bg-gray-700/30 rounded-xl p-3 lg:p-4 border border-gray-600/30">
-                                          <h4 class="text-xs lg:text-sm uppercase tracking-wider text-gray-400 mb-1 lg:mb-2">Impact</h4>
-                                          <p class="text-gray-300 text-sm lg:text-base">
-                                              {index === 0 && 'Reduced reporting time by 70% through automation'}
-                                              {index === 1 && 'Improved API response times by 40% through optimization'}
-                                              {index === 2 && 'Increased user engagement by 25% with UI improvements'}
-                                              {index === 3 && 'Created interactive experiences with 90%+ satisfaction ratings'}
-                                          </p>
+                                        <h4 class="text-xs lg:text-sm uppercase tracking-wider text-gray-400 mb-1 lg:mb-2">Impact</h4>
+                                        <p class="text-gray-300 text-sm lg:text-base">
+                                          {impacts[index] || ''}
+                                        </p>
                                       </div>
                                   </div>
                                   

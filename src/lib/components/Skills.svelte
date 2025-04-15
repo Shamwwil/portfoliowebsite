@@ -10,10 +10,10 @@
       icon: faPalette,
       skills: [
         { name: 'Svelte/SvelteKit', level: 95 },
-        { name: 'React', level: 90 },
+        { name: 'React', level: 60 },
         { name: 'TypeScript', level: 85 },
         { name: 'Tailwind CSS', level: 95 },
-        { name: 'D3.js', level: 80 },
+        { name: 'D3.js', level: 75 },
       ],
     },
     {
@@ -24,7 +24,7 @@
         { name: 'Pandas', level: 85 },
         { name: 'SQL', level: 80 },
         { name: 'Data Visualization', level: 85 },
-        { name: 'Tableau', level: 75 },
+        { name: 'Tableau', level: 70 },
       ],
     },
     {
@@ -34,7 +34,7 @@
         { name: 'Node.js', level: 80 },
         { name: 'Python', level: 90 },
         { name: 'REST APIs', level: 85 },
-        { name: 'PostgreSQL', level: 75 },
+        { name: 'PostgreSQL', level: 80 },
         { name: 'MongoDB', level: 70 },
       ],
     },

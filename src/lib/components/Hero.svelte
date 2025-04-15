@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { fade, fly } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 
   let words = [
     'Full-Stack Developer.',

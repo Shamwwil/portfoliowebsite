@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { faBars, faTimes, faHome, faUser, faCode, faProjectDiagram, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+    import { faBars, faTimes, faHome, faUser, faCode, faProjectDiagram, faEnvelope, faCoffee } from '@fortawesome/free-solid-svg-icons';
     import { faGithub, faLinkedin, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     
@@ -17,8 +17,8 @@
     const socialItems = [
       { icon: faGithub, href: 'https://github.com/shamwwil' },
       { icon: faLinkedin, href: 'https://linkedin.com/in/shamwwil' },
-      { icon: faTwitter, href: 'https://twitter.com/shamwwil' },
       { icon: faWhatsapp, href: 'https://wa.me/233550262563', },
+      { icon: faCoffee, href: 'https://buymeacoffee.com/shamwwil' },
     ];
     
     function handleScroll() {
@@ -34,11 +34,12 @@
     class={`fixed w-full z-50 transition-all duration-500 ${scrolled ? 'py-2 bg-gray-900/80 backdrop-blur-md shadow-xl' : 'py-4 bg-transparent'}`}
   >
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <a href="#hero" class="flex items-center group">
-        <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600 group-hover:bg-gradient-to-l transition-all duration-300">
+      <a href="#hero" class="flex items-center group relative">
+        <span class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 group-hover:from-indigo-600 group-hover:via-blue-500 group-hover:to-cyan-400 transition-all duration-500 ease-[cubic-bezier(0.68,-0.6,0.32,1.6)] tracking-tighter">
           shamwwil
+          <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-blue-500/70 to-indigo-600/70 scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
         </span>
-        <span class="ml-2 px-2 py-1 text-xs bg-blue-900/30 text-blue-400 rounded-full border border-blue-800/50 group-hover:bg-blue-900/50 transition-all duration-300">
+        <span class="badge-glow ml-2 px-2.5 py-1 text-xs font-mono font-semibold bg-gradient-to-br from-blue-900/80 to-indigo-900/80 text-blue-100 rounded-full border border-blue-700/50 group-hover:border-blue-400/60 group-hover:text-cyan-100 group-hover:from-blue-800 group-hover:to-indigo-800 group-hover:shadow-[0_0_8px_-2px_rgba(96,165,250,0.5)] transition-all duration-300 shadow-sm backdrop-blur-sm">
           dev
         </span>
       </a>
@@ -115,4 +116,12 @@
     header {
       border-bottom: 1px solid rgba(99, 102, 241, 0.1);
     }
+    @keyframes pulse-glow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
+}
+
+.group:hover .badge-glow {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
   </style>

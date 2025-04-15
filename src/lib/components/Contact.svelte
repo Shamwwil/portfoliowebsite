@@ -1,6 +1,6 @@
 <script lang="ts">
   import { faGithub, faLinkedin, faTwitter, faCodepen, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-  import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+  import { faCoffee, faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
   import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
   
   let name = '';
@@ -12,7 +12,7 @@
   const socialLinks = [
     { icon: faGithub, url: 'https://github.com/shamwwil', name: 'GitHub' },
     { icon: faLinkedin, url: 'https://linkedin.com/in/shamwwil', name: 'LinkedIn' },
-    { icon: faTwitter, url: 'https://twitter.com/shamwwil', name: 'Twitter' },
+    { icon: faCoffee, url: 'https://buymeacoffee.com/shamwwil', name:'BuyMeACoffee' },
     { icon: faWhatsapp, url: 'https://wa.me/233550262563', name: 'WhatsApp' },
   ];
   
@@ -67,7 +67,7 @@
                 bind:value={name}
                 required
                 class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all duration-300"
-                placeholder="John Doe"
+                placeholder="Shamwwil"
               />
             </div>
             
@@ -79,7 +79,7 @@
                 bind:value={email}
                 required
                 class="w-full px-4 py-3 bg-gray-700/50 border border-gray-600/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white placeholder-gray-500 transition-all duration-300"
-                placeholder="john@example.com"
+                placeholder="sham@example.com"
               />
             </div>
             
